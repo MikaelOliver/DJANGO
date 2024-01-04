@@ -1,0 +1,6 @@
+__init___.py = um construtor - quando vc tem esse cara em uma pasta dentro do django, o python reconhece como modulos.
+asgi.py  e wsgi.py = são arquivos de configuração do servido web de ospedagem.
+settings.py = arquivo geral das configurações do ambiente django Obs: É o arquivo mais importante do projeto.
+urls.py = arquivo de rotas do projeto.
+manage.py = arquivo com as funções de gerenciamento do djangop
+apps.py = é o arquivo de configuração do meu app(vendas)
