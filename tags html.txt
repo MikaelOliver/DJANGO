@@ -1,0 +1,7 @@
+h1 até h6 - tags de titulo.
+p - paragrafo
+a - tag de link
+ul e li - listas em html
+div - cria divisões 
+img - imagens
+hr - linhas de divisão
