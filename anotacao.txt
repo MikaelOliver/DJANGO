@@ -4,3 +4,21 @@ settings.py = arquivo geral das configurações do ambiente django Obs: É o arq
 urls.py = arquivo de rotas do projeto.
 manage.py = arquivo com as funções de gerenciamento do djangop
 apps.py = é o arquivo de configuração do meu app(vendas)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+core - settings - installed_apps
