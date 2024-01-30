@@ -1,0 +1,24 @@
+{% load static  %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reuniões</title>
+</head>
+<body>
+    <h1>REUNIÃO</h1>
+    <div style ="width: 900px; display: inline-block;" >
+        <a href= "{% url "register" %}">Registrar Reunião </a>
+        <br><br>
+        {% for reuniao in reunioes %}
+        <h3> Titulo : {{ reuniao.titulo}}</h3>
+        <p> Descrição : {{ reuniao.descricao}} </p>
+        <p> Local : {{ reuniao.local }} </p>
+        <p> Participante : {{ reuniao.nome_participante }} </p>
+        <span> Data : {{ reuniao.data }} </span>
+        <a href="{% url 'delete' reuniao.id %}">Cancelar Reunião</a>
+        {% endfor %}
+    </div>
+</body>
+</html>

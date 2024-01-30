@@ -1,0 +1,26 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ATRAÇÕES TURISTICAS - lista</title>
+</head>
+<body>
+    <div style ="width: 900px; margin : 20px auto;">
+        <a href= "{% url 'register' %}">CADASTRO DE ATRAÇÕES </a>
+        <br><br>
+        {% for atracao_turistico in atracoes_turisticos %}
+        <img src = "media/{{ atracao_turistico.photo}}" width="300" heigth = "300">
+        <h3> Nome : {{ atracao_turistico.name}}</h3>
+        <p> Descrição : {{ atracao_turistico.description}} </p>
+        <p> Comentários : {{ atracao_turistico.comments }} </p>
+        <p> Endereço : {{ atracao_turistico.address }} </p>
+        <span> Avaliação : {{ atracao_turistico.valuation }} </span>
+        <span> Horario de Inicio : {{ atracao_turistico.start_time }} </span>
+        <span> Horario de Encerramento : {{ atracao_turistico.end_time }} </span>
+
+        {% endfor %}
+    </div>
+</body>
+</html>
